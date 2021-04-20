@@ -1,25 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Field ,Form } from "react-final-form";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import "./App.css";
 
+const App =()=>(
+  <Form onSubmit ={()=>{}}
+  render ={({handleSubmit,values}) =>(
+    <form>
+      <div>
+        <label htmlFor="firstname">First Name</label>
+        <Field
+              name ="firstName"
+              component ="input"
+              type="text"
+              placeholder ="First Name"/>
+              
+      </div>
+
+      <div>
+        <label htmlFor="lastname">Last Name</label>
+        <Field
+              name ="lastName"
+              component ="input"
+              type="text"
+              placeholder ="Last Name"/>
+              
+      </div>
+
+      
+      <div >
+        <label htmlFor="email">Email</label>
+        <Field
+              name ="email"
+              component ="input"
+              type="email"
+              placeholder ="Email"/>
+              
+      </div>
+
+      <div >
+        <label htmlFor="password">Password</label>
+        <Field
+              name ="password"
+              component ="input"
+              type="password"
+              placeholder ="Password"/>
+              
+      </div>
+     
+      <div >
+        <label htmlFor="contact">Contact</label>
+        <Field
+              name ="contact"
+              component ="input"
+              type="text"
+              placeholder ="Contact"/>
+              
+      </div>
+              <button type="submit">Submit</button>
+            
+      
+     
+    </form>
+  )}
+  />
+)
 export default App;

@@ -1,2 +1,62 @@
 
+*{
+    box-sizing: border-box;
+   
+}
+form{
+    /* height: 120vh; */
+    width: 80%;
+    
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    background-color:white;
+  
+     padding: 10em;
+    line-height: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.wrapper {
+    
+    height: 10vh;
+    width: 100%;
+    
+    
+    
+    
+    
+    background-color:white;
+  } 
+  
+.contact{
+    color :blue;
+    font-weight: bold;
+    padding: 2px;
+  
+    
+}
+.contact form{
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid: gap 20px;
+
+}
+.contact form label{
+    display: block;
+}
+.contact form .full{
+    grid-column: 3/4;
+}
+.contact form button{
+    width: 24%;
+    background-color: blue;
+    border:2;
+    
+    font-weight: bold;
+
+    
+}
   
